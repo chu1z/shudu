@@ -23,11 +23,13 @@ export default class SudoKu {
 
         let result = this.deepCopy(this.values);
 
+        let keys = this.keys.concat();
+
         let temp = {};
         for (var i = 1; i <= 9; i++) {
-            var r = Math.floor(Math.random() * this.keys.length);
-            temp[this.keys[r]] = i;
-            this.keys.splice(r, 1);
+            var r = Math.floor(Math.random() * keys.length);
+            temp[keys[r]] = i;
+            keys.splice(r, 1);
         }
 
         for (var j = 0; j < 9; j++) {
