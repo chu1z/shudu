@@ -34,8 +34,12 @@ body {
   font-size: 1rem;
 }
 
+#time {
+  font-size: 2rem;
+}
+
 .game {
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 .game-info {
